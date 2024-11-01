@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Hoves', sans-serif;
+    font-size:  calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 400;
+}
+
+section{
+    padding:37px calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+}
+
+#hello{
+    background-image: url(./img/html_css_js\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top 121px right 68px;
+    background-size: 40%;
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo__img{
+    margin-bottom:  calc(28px + (85 - 28) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.header-logo__bigImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.header-logo__data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(24px + (160 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: 78px;
+
+}
+@media (max-width:1136px){
+    .header-logo__data{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+ul li{
+    list-style: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.header-logo__title h1{
+    font-size: calc(42px + (80 - 42) * ((100vw - 375px) / (1280 - 375)));
+    font-family: 'Chava';
+}
+
+.header-sing__info{
+    max-width: 930px;
+    font-size:  calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    margin: 40px 0;
+    line-height: 140%;
+}
+button{
+    font-size: 18px;
+    width: 328px;
+    background-color: white;
+    padding: 20px;
+    color:  #6E3ABA;
+    border-radius: 12px;
+    margin-right:   calc(1px + (30 - 1) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom:   calc(40px + (1 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+button:hover{
+    background-color: #6E3ABA;
+    color: white;
+}
+
+.main{
+    margin-top:   calc(80px + (160 - 80) * ((100vw - 375px) / (1280 - 375)));
+}
+.main-card{
+    display: flex;
+    gap: 88px;
+    margin-bottom: 57px;
+    flex-wrap: wrap;
+}
+.main-title{
+    font-size:  calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    margin-bottom:   calc(65px + (90 - 65) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 117%;
+}
+.card-title{
+    font-size:   calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 600;
+    margin: 2px 0 20px 0;
+    max-width: 430px;
+    line-height: 140%px;
+}
+.card-text{
+    max-width: 470px;
+    font-size:   calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
+
+.purpleBg{
+    background-color: #6E3ABA;
+}
+
+section.purpleBg{
+    text-align: center;
+    padding-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom:   calc(41px + (88 - 41) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h3{
+    font-size:  calc(34px + (52 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 117%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.timerElem .value {
+    font-family: "Chava";
+    font-size: calc(60px + (174 - 60) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 107%;
+    color: #2f1d4e;
+}
+.timerElem .desk {
+    font-size: calc(10px + (27 - 10) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 118%;
+    color: #2f1d4e;
+    text-transform: uppercase;
+}
+
+
+
+
+.teacher .flexContainer{
+    flex-wrap: wrap;
+    gap: 20px 50px;
+}
+.main-title{
+    font-size:  calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+.teacherInfo h4{
+font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 700;
+line-height: 120%;
+}
+.teacherInfo p {
+font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+line-height: 140%;
+}
+
+.exp span{
+font-size:  calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+line-height: 140%;
+text-align: left;
+}
