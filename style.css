@@ -6,9 +6,13 @@
     font-size:  calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
     font-weight: 400;
 }
+header {
+    margin-top: 37px;
+}
 
 section{
-    padding:37px calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+    padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: 160px;
 }
 
 #hello{
@@ -147,7 +151,7 @@ h3{
 
 
 
-
+/* 
 .teacher .flexContainer{
     flex-wrap: wrap;
     gap: 20px 50px;
@@ -175,4 +179,155 @@ font-size:  calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
 font-weight: 400;
 line-height: 140%;
 text-align: left;
+} */
+
+.bioTeacher h2 {
+font-size: calc(38px + (58 - 38) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 500;
+line-height: 117%;
+text-transform: uppercase;
+}
+.bio{
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+}
+.coolTeacher{
+    flex-basis: 240px;
+    flex-grow: 1;
+    max-width: 350px;
+    text-align: center;
+}
+.coolTeacher img{
+    width: 100%;
+}
+@media (max-width: 850px) {
+    .coolTeacher img{
+        text-align: center;
+    }
+}
+.bioText{
+    flex-basis: 340px;
+    flex-grow: 3;
+
+}
+.bioText h4{
+    font-size: calc(36px + (48 - 36) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 120%;  
+
+    
+}
+.bioText p {
+font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+line-height: 137%;
+margin-top: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));
+margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+.expirience{
+display: flex;
+justify-content: space-between;
+
+}
+.exp{
+ width: calc(156px + (250 - 156) * ((100vw - 375px) / (1280 - 375)));
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.exp img{
+width: 36px;
+
+}
+.exp span{
+font-size: calc(13px + (21 - 13) * ((100vw - 375px) / (1280 - 375)));
+line-height: 142%;
+
+}
+
+.bigTitle{
+font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 500;
+line-height: 117%;
+}
+.money p{
+font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+line-height: 140%;
+margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+margin-bottom: calc(20px + (36 - 20) * ((100vw - 375px) / (1280 - 375)));
+
+}
+.moneyimg{
+    flex-basis: 1065px;
+    flex-grow: 1;
+
+}
+.money img{
+    width: 100%;
+}
+.giv .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+.giv .info-img{
+    flex-basis: 400px;
+    flex-grow: 3;
+    max-width: 579px;
+}
+.giv img{
+    width: 100%;
+}
+ .info-text{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+    max-width: 520px;
+}
+.info-text span p{
+    font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 119%;
+}
+
+.diplom{
+    /* display: flex;
+
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: 
+    'img h2'
+    'img p';
+    gap: 20px;
+    grid-template-columns: repeat(1fr, 1fr);
+}
+
+@media (max-width:960px) {
+    .diplom {
+        display: flex;
+        flex-direction: column;
+    }
+    .diplom h2{
+        order: -1;
+        }
+}
+.diplom img{
+ grid-area: img;
+ flex-basis: 328px;
+ flex-grow: 1;
+}
+.diplom h2{
+grid-area: h2;
+max-width: 578px;
+}
+.diplom p {
+grid-area: p;
+font-size:  calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 400;
+line-height: 140%;
 }
