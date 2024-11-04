@@ -12,7 +12,7 @@ header {
 
 section{
     padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
-    margin-bottom: 160px;
+    margin-bottom: calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
 }
 
 #hello{
@@ -251,6 +251,7 @@ line-height: 142%;
 font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
 font-weight: 500;
 line-height: 117%;
+text-transform: uppercase;
 }
 .money p{
 font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
@@ -282,6 +283,7 @@ margin-bottom: calc(20px + (36 - 20) * ((100vw - 375px) / (1280 - 375)));
 }
 .giv img{
     width: 100%;
+
 }
  .info-text{
     
@@ -306,7 +308,9 @@ margin-bottom: calc(20px + (36 - 20) * ((100vw - 375px) / (1280 - 375)));
     gap: 20px;
     grid-template-columns: repeat(1fr, 1fr);
 }
-
+.dNone{
+    display: none;
+}
 @media (max-width:960px) {
     .diplom {
         display: flex;
@@ -315,15 +319,24 @@ margin-bottom: calc(20px + (36 - 20) * ((100vw - 375px) / (1280 - 375)));
     .diplom h2{
         order: -1;
         }
+    .dHave{
+        display: none;
+    }
+    .dNone{
+        display: inline;
+    }
+}
+b {
+    font-weight: bold;
 }
 .diplom img{
  grid-area: img;
- flex-basis: 328px;
- flex-grow: 1;
+ width: 100%;
 }
 .diplom h2{
 grid-area: h2;
 max-width: 578px;
+text-transform: uppercase;
 }
 .diplom p {
 grid-area: p;
