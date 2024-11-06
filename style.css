@@ -11,23 +11,27 @@ header {
 }
 
 section{
-    padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+    padding: 0 calc(24px + (100 - 24) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom: calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
 }
 
 #hello{
     background-image: url(./img/html_css_js\ 1.png);
     background-repeat: no-repeat;
-    background-position: top 121px right 68px;
-    background-size: 40%;
-}
+    background-position: top calc(55px + (121 - 55) * ((100vw - 375px) / (1280 - 375))) right calc(2px + (58 - 2) * ((100vw - 375px) / (1280 - 375)));
+    background-size: calc(179px + (395 - 179) * ((100vw - 375px) / (1280 - 375)));
+} 
 .flexContainer{
     display: flex;
     justify-content: space-between;
 }
-
 .header-logo__img{
     margin-bottom:  calc(28px + (85 - 28) * ((100vw - 375px) / (1280 - 375)));
+    flex-basis: 215px;
+    flex-grow: 1;
+}
+.header-logo__img img{
+  width: calc(8.8vw + 181.8px);
 }
 
 .header-logo__bigImg{
@@ -42,12 +46,6 @@ section{
     gap: calc(24px + (160 - 24) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom: 78px;
 
-}
-@media (max-width:1136px){
-    .header-logo__data{
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 ul li{
@@ -68,7 +66,7 @@ ul li{
     line-height: 140%;
 }
 button{
-    font-size: 18px;
+    font-size: 17px;
     width: 328px;
     background-color: white;
     padding: 20px;
@@ -87,15 +85,20 @@ button:hover{
 }
 .main-card{
     display: flex;
-    gap: 88px;
-    margin-bottom: 57px;
+    gap:calc(40px + (88 - 40) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom:calc(45px + (58 - 45) * ((100vw - 375px) / (1280 - 375)));
     flex-wrap: wrap;
 }
 .main-title{
     font-size:  calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
     font-weight: 500;
-    margin-bottom:   calc(65px + (90 - 65) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom:   calc(20px + (90 - 20) * ((100vw - 375px) / (1280 - 375)));
     line-height: 117%;
+    text-transform: uppercase;
+}
+
+.card > div img {
+    width: calc(180px + (210 - 180) * ((100vw - 375px) / (1280 - 375)));
 }
 .card-title{
     font-size:   calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
@@ -103,6 +106,7 @@ button:hover{
     margin: 2px 0 20px 0;
     max-width: 430px;
     line-height: 140%px;
+    text-transform: uppercase;
 }
 .card-text{
     max-width: 470px;
@@ -192,7 +196,9 @@ text-transform: uppercase;
     display: flex;
     gap: 20px 50px;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 .coolTeacher{
     flex-basis: 240px;
     flex-grow: 1;
@@ -202,11 +208,7 @@ text-transform: uppercase;
 .coolTeacher img{
     width: 100%;
 }
-@media (max-width: 850px) {
-    .coolTeacher img{
-        text-align: center;
-    }
-}
+
 .bioText{
     flex-basis: 340px;
     flex-grow: 3;
@@ -311,21 +313,7 @@ margin-bottom: calc(20px + (36 - 20) * ((100vw - 375px) / (1280 - 375)));
 .dNone{
     display: none;
 }
-@media (max-width:960px) {
-    .diplom {
-        display: flex;
-        flex-direction: column;
-    }
-    .diplom h2{
-        order: -1;
-        }
-    .dHave{
-        display: none;
-    }
-    .dNone{
-        display: inline;
-    }
-}
+
 b {
     font-weight: bold;
 }
@@ -343,4 +331,160 @@ grid-area: p;
 font-size:  calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
 font-weight: 400;
 line-height: 140%;
+}
+
+.aboutIt{
+    font-size: calc(38px + (58 - 38) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 100px;
+
+    align-items: end;
+    margin-top:  calc(34px + (80 - 34) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.aboutUs h4 {
+font-size: calc(22px + (27 - 22) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 600;
+line-height: 140%;
+
+grid-row: 2/3;
+}
+
+.aboutUs-info  .stat{
+font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 700;
+line-height: 118%;
+
+}
+
+.aboutUs-info  span{
+    font-size:  calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
+
+
+
+
+.programBorder{
+    padding:0  calc(19px + (64 - 19) * ((100vw - 375px) / (1280 - 375)));
+    border: 1px solid #000;
+    border-top-right-radius: 30%;
+}
+.programBorder h2{
+    margin-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(24px + (40 - 24) * ((100vw - 375px) / (1280 - 375)));
+}
+.programBorder div {
+    text-align: center;
+    margin-top:  calc(24px + (34 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom:  calc(24px + (35 - 24) * ((100vw - 375px) / (1280 - 375)));
+}
+.programButton-none{
+    display: none;
+}
+.lesson{
+font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+line-height: 139%;
+font-weight: 400;
+padding: 24px 0;
+border-bottom: 1px solid #a1a1a1;
+}
+.programButton{
+    
+    width:calc(328px + (424 - 328) * ((100vw - 375px) / (1280 - 375)));
+}
+
+
+.rivievContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+    justify-content: space-between;
+    gap: 30px;
+    flex-grow: 1;
+}
+.reviewCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0 calc(15.5px + (20 - 15.5) * ((100vw - 375px) / (1280 - 375)));
+    padding-top: calc(53px + (50 - 53) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom:calc(40px + (44 - 40) * ((100vw - 375px) / (1280 - 375))) ;
+    background-color: #F0F7FD;
+    border-radius: 30px;
+    width: calc(328px + (335 - 328) * ((100vw - 375px) / (1280 - 375))) ;
+}
+.reviewCard p{
+font-size: 21px;
+line-height: 138%;
+
+}
+.reviewCard .revBio > span{
+font-size:  21px;
+line-height: 138%;
+}
+.reviewCard img{
+    padding-top: 4.6px;
+    padding-bottom:calc(8px + (13 - 8) * ((100vw - 375px) / (1280 - 375)));
+}
+.revBio{
+    display: flex;
+    align-items:center;
+    gap: 10px 16px;
+}
+.revBio img{
+    border-radius: 50%;
+}
+
+@media (max-width:1136px){
+    .header-logo__data{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 850px) {
+    .coolTeacher img{
+        text-align: center;
+    }
+}
+@media (max-width:960px) {
+    .diplom {
+        display: flex;
+        flex-direction: column;
+    }
+    .diplom h2{
+        order: -1;
+        }
+    .dHave{
+        display: none;
+    }
+    .dNone{
+        display: inline;
+    }
+}
+@media (max-width:710px) {
+    .diplom{
+        grid-template-columns: 1fr;
+    }
+    .diplom img{
+        grid-row: 2/3;
+    }
+    .aboutUs{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .programButton{
+        display: none;
+    }
+    .programButton-none{
+        display: block;
+        margin-top: 30px;
+        margin-left: calc(1px + (325 - 1) * ((100vw - 375px) / (1280 - 375)));
+    }
 }

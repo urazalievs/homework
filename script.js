@@ -1,6 +1,14 @@
+function nexDay(){
+    let tomorrow = new Date()
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    tomorrow.setHours(0,0,0,0)
+    return tomorrow
+}
+
+
 function calkTimer(){
     let today = new Date()
-    let saleDeadLine = new Date(2024,10,5)
+    let saleDeadLine = nexDay()
     let delta = (saleDeadLine - today)/1000
     delta= Math.trunc(delta)
 
