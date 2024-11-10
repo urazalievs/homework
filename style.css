@@ -74,10 +74,12 @@ button{
     border-radius: 12px;
     margin-right:   calc(1px + (30 - 1) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom:   calc(40px + (1 - 40) * ((100vw - 375px) / (1280 - 375)));
+    cursor: pointer;
 }
 button:hover{
     background-color: #6E3ABA;
     color: white;
+
 }
 
 .main{
@@ -369,12 +371,16 @@ line-height: 118%;
 }
 
 
-
-
 .programBorder{
     padding:0  calc(19px + (64 - 19) * ((100vw - 375px) / (1280 - 375)));
-    border: 1px solid #000;
-    border-top-right-radius: 30%;
+    border: 2px solid #000;
+    position: relative;
+}
+#conver{
+    position: absolute;
+    width: calc(34px + (100 - 34) * ((100vw - 375px) / (1280 - 375)));
+    top: -2px;
+    right: -2px;
 }
 .programBorder h2{
     margin-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
@@ -400,6 +406,8 @@ border-bottom: 1px solid #a1a1a1;
     width:calc(328px + (424 - 328) * ((100vw - 375px) / (1280 - 375)));
 }
 
+/* Код секшон отзывы */
+
 
 .rivievContainer{
     display: flex;
@@ -419,6 +427,7 @@ border-bottom: 1px solid #a1a1a1;
     background-color: #F0F7FD;
     border-radius: 30px;
     width: calc(328px + (335 - 328) * ((100vw - 375px) / (1280 - 375))) ;
+    height: 550px;
 }
 .reviewCard p{
 font-size: 21px;
@@ -442,10 +451,172 @@ line-height: 138%;
     border-radius: 50%;
 }
 
+
+.splideContainer{
+    padding: 0;
+    margin: 0;
+}
+.splide-cont h2{
+    margin-bottom: calc(20px + (14 - 20) * ((100vw - 375px) / (1280 - 375)));
+
+}
+.splide-cont p{
+font-size:  calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+line-height: 130%;
+margin-bottom:  calc(20px + (24 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+.splide__center{
+    padding: 0;
+}
+.slideIMG{
+    width:  calc(328px + (507 - 328) * ((100vw - 375px) / (1280 - 375)));
+    height:  calc(328px + (507 - 328) * ((100vw - 375px) / (1280 - 375)));
+}
+.footer{
+    background-color: #222222;
+    padding-top:  calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom:  calc(59px + (80 - 59) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: 0;
+}
+.footer .flexContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:88px 140px ;
+}
+.recordDirection{
+    color:#fff;
+
+}
+.recordDirection h2{
+    max-width: 424px;
+    margin-bottom: calc(41px + (79 - 41) * ((100vw - 375px) / (1280 - 375)));
+}
+.direction{
+    margin-bottom: 23px;
+    display: flex;
+    align-items:center;
+    gap:20px;
+}
+.direction img{
+    width: 28px;
+}
+.directionTTU :last-child{
+    text-transform: uppercase;
+}
+
+
+.record{
+    background-color:#fff;
+    padding-top: 60px;
+    padding-left: calc(30px + (69 - 30) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom: calc(50px + (60 - 50) * ((100vw - 375px) / (1280 - 375)));
+    padding-right: calc(30px + (69 - 30) * ((100vw - 375px) / (1280 - 375)));
+    border-radius:20px;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+#saleTen{
+    color: #fff;
+
+    position: absolute;
+    top:calc(-50px + (-80 - -50) * ((100vw - 375px) / (1280 - 375)));
+    right: calc(1px + (400 - 1) * ((100vw - 375px) / (1280 - 375)));
+    padding-top: calc(30px + (50 - 30) * ((100vw - 375px) / (1280 - 375))) ;
+    padding-right:20px;
+    padding-left: 20px;
+    padding-bottom: calc(30px + (50 - 30) * ((100vw - 375px) / (1280 - 375)));
+    background-color:#6E3ABA;
+    border-radius:55%;
+    font-size: calc(40px + (74 - 40) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 117%;
+
+
+}
+.record h4{
+font-size: calc(26px + (36 - 26) * ((100vw - 375px) / (1280 - 375)));
+font-weight: 700;
+line-height: 116%;
+margin-top: 10px;
+}
+.record :nth-child(3){
+    padding-bottom: 30px;
+    padding-top: 10px;
+font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+line-height: 29.4px;
+}
+.record input{
+    border: none;
+    border-bottom:1px solid #A1A1A16B;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+    width: calc(267px + (338 - 267) * ((100vw - 375px) / (1280 - 375)));
+}
+.recordText{
+    font-size: 18px;
+    line-height: 116%;
+    width: calc(271px + (353 - 271) * ((100vw - 375px) / (1280 - 375)));
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #a1a1a1;
+}
+.recordQua{
+    color: #a1a1a1;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 116%;
+}
+.record button{
+    margin-bottom: 40px;
+    margin-right: 0;
+    width: calc(265px + (329 - 265) * ((100vw - 375px) / (1280 - 375)));
+}
+.inpNum{
+    width: calc(265px + (329 - 265) * ((100vw - 375px) / (1280 - 375)));
+    display: flex;
+    align-items:baseline;
+    gap: 4px;
+}
+.inpNum input{
+    width:  calc(186px + (250 - 186) * ((100vw - 375px) / (1280 - 375)));
+}
+
+#splide2{
+    padding: 0;
+}
+.splide_flex{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media(max-width: 1150px) {
+    .splide__center{
+        text-align: center;
+    }
+    .slideIMG{
+        width:  calc(340px + (907 - 340) * ((100vw - 375px) / (1280 - 375)));
+        height:  calc(340px + (907 - 340) * ((100vw - 375px) / (1280 - 375)));
+    }
+}
 @media (max-width:1136px){
     .header-logo__data{
         display: flex;
         flex-direction: column;
+    }
+}
+@media (max-width:815px) {
+    .rivievContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .rivievContainer .reviewCard{
+        width: 500px;
     }
 }
 @media (max-width: 850px) {
@@ -486,5 +657,11 @@ line-height: 138%;
         display: block;
         margin-top: 30px;
         margin-left: calc(1px + (325 - 1) * ((100vw - 375px) / (1280 - 375)));
+    }
+    .lessons :last-child{
+        border:0;
+    }
+    #displayNone{
+        display: none;
     }
 }
